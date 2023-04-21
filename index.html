@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistemas Numéricos</title>
+  <style>
+    body {
+      background-color: rgb(20, 20, 20);
+
+      font: normal 12pt Arial;
+      color: #20C20E;
+    }
+    section#calculate {
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+      width: 600;
+      height: 400;
+    }
+    div#output {
+
+      background-color: rgb(20, 20, 20);
+
+      color: #20C20E;
+
+      display: flexbox;
+      float: right;
+    }
+    div#prompt {
+
+      background-color: rgb(20, 20, 20);
+
+      color: #20C20E;
+    }
+    button#convert {
+      background-color: black;
+      padding: 5px;
+
+      color: #20C20E;
+      font-weight: bold;
+    }
+    figcaption a {
+      text-decoration: none;
+      color: #20C20E;
+    }
+  </style>
+</head>
+<body>
+  <article id="information">
+    <h2>Como Realizar Conversões Entre Bases</h2>
+    <figure>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DJYIndxhcKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <figcaption>
+        <p>Canal: <a href="https://www.youtube.com/channel/UCH7qbUVtf7yH6PeTjeZBT3Q" onmouseover="this.style.color='blue'" onmouseout="this.style.color='#20C20E'">Aguinaldo Jr</a></p>
+      </figcaption>
+   </figure>
+  </article>
+  <section id="calculate">
+    <h2>Transformador de Números em Outras Bases</h2>
+    <p>Digite no campo abaixo o número e selecione para qual base deseja converter.</p>
+    <p>BIN = Binário</p>
+    <p>DEC = Decimal</p>
+    <p>HEX = Hexadecimal</p>
+    <div id="prompt">
+      <input type="text" id="numero" placeholder="Digite o número aqui..." />
+      <select id="conversao-bases">
+        <option>BIN para DEC</option>
+        <option>DEC para BIN</option>
+        <option>BIN para HEX</option>
+      </select>
+      <button id="convert" onclick="acionar()">Converter</button>
+    </div>
+    <div id="output">
+      <input id="resposta" placeholder="Resposta aqui..." readonly>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
