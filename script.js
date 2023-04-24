@@ -58,7 +58,21 @@ function converter(numero, conversor, resposta) {
           window.alert("Algum dos caracteres não faz parte do alfabeto binário")
         }
       } else {
-        window.alert("Opção inválida!")
+        if (conversor.value == "DEC para HEX") {
+          for (let caractere of numero.value) {
+            console.log(caractere)
+            if (alfabeto_decimal.includes(caractere)) {
+              valido = true
+            } else valido = false
+          }
+          if (valido) {
+            resposta.value = converterBinHex(String(converterDecBin(numero.value)))
+          } else {
+            window.alert("Algum dos caracteres não faz parte do alfabeto decimal")
+          }
+        } else {
+          window.alert("Opção inválida!")
+      }
       }
     }
   }
