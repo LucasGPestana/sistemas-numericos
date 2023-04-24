@@ -8,3 +8,4 @@ De | Para
 Binário | Decimal
 Decimal | Binário
 Binário | Hexadecimal
+Decimal | Hexadecimal
